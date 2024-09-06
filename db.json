@@ -1,0 +1,84 @@
+{
+  "kaupungit": [
+    {
+      "nimi": "Helsinki",
+      "maakunta": "Uusimaa"
+    },
+    {
+      "nimi": "Espoo",
+      "maakunta": "Uusimaa"
+    },
+    {
+      "nimi": "Tampere",
+      "maakunta": "Pirkanmaa"
+    },
+    {
+      "nimi": "Vantaa",
+      "maakunta": "Uusimaa"
+    },
+    {
+      "nimi": "Oulu",
+      "maakunta": "Pohjois-Pohjanmaa"
+    },
+    {
+      "nimi": "Turku",
+      "maakunta": "Varsinais-Suomi"
+    },
+    {
+      "nimi": "Jyväskylä",
+      "maakunta": "Keski-Suomi"
+    },
+    {
+      "nimi": "Lahti",
+      "maakunta": "Päijät-Häme"
+    },
+    {
+      "nimi": "Kuopio",
+      "maakunta": "Pohjois-Savo"
+    },
+    {
+      "nimi": "Pori",
+      "maakunta": "Satakunta"
+    },
+    {
+      "nimi": "Lappeenranta",
+      "maakunta": "Etelä-Karjala"
+    },
+    {
+      "nimi": "Rovaniemi",
+      "maakunta": "Lappi"
+    },
+    {
+      "nimi": "Kotka",
+      "maakunta": "Kymenlaakso"
+    },
+    {
+      "nimi": "Vaasa",
+      "maakunta": "Pohjanmaa"
+    },
+    {
+      "nimi": "Joensuu",
+      "maakunta": "Pohjois-Karjala"
+    },
+    {
+      "nimi": "Seinäjoki",
+      "maakunta": "Etelä-Pohjanmaa"
+    },
+    {
+      "nimi": "Salo",
+      "maakunta": "Varsinais-Suomi"
+    },
+    {
+      "nimi": "Mikkeli",
+      "maakunta": "Etelä-Savo"
+    },
+    {
+      "nimi": "Kouvola",
+      "maakunta": "Kymenlaakso"
+    },
+    {
+      "nimi": "Hyvinkää",
+      "maakunta": "Uusimaa"
+    }
+  ]
+}

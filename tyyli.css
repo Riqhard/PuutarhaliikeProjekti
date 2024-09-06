@@ -1,45 +1,265 @@
 html, body { 
-    height: 100%;
-    background-color: #EEE;
+    
+    background-color: #2C423F;
+
 }
 
 body{
+    min-height: 1100px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
 
-.grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header'
-      'menu main main';
-    gap: 10px;
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: rgba(150, 141, 141, 0.8);
+input,section,textarea{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+
+
+.sailio{
+    width: 250px; 
+    height: 250px;
+    margin: 3px;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: 40%;
+    display: flex;
+}
+
+.sailio img{
+    width: auto; 
+    height: 250px;
+
+}
+
+
+
+a{
+    color: #101;
+    text-decoration: none;
+}
+a:hover{
+    color: azure;
+    text-decoration: underline;
+}
+#sisalto{
+    max-width: 750px; 
+    
+    margin: auto;
     text-align: center;
-    padding: 10px 0;
-  }
+    background-color: #4C5B61;
+    border:2px solid #101 ;
+    border-radius: 10px;
+    color: #F6F4F3;
+    text-shadow: 0 1px 0 #0000006e, 0 -1px 0 #0000006e, 1px 0 0 #0000006e, -1px 0 0 #0000006e;
+    text-decoration: dotted;
+    padding: 3px;
+    margin-top: 5px;
+}
+.linkkiotsikko{
+    margin: 2px;
+    padding: 0px;
+    text-align: center;
+}
 
 
 
+.otsikko{
+    margin: 2px;
+    padding: 0px;
+    text-align: center;
+
+    background-color: #AF5B5B;
+    border:2px solid #101 ;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 0 #0000006e, 0 -1px 0 #0000006e, 1px 0 0 #0000006e, -1px 0 0 #0000006e;
+}
+
+form{
+    text-align: left;
+}
+
+.label-responsive {
+    display: block;
+    margin-top: 10px;
+    width: 150px;
+}
   
+.label-additional {
+    display: inline-block;
+    margin-top: 10px;
+}
 
-  nav {
+[type='submit']{
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: 40%;
+    border-radius: 8px;
+    
+    width: 150px;
+}
+  
+[type='submit']:hover{
+background-color: #333;
+color: white;
+border-radius: 8px;
+}
+
+select, textarea{
+font-size: 1rem;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.textTest{
+color: #AAA;
+}
+
+textarea{
+max-width: 90%;
+resize: none;
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
+  margin: auto;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+}
+
+
+
+
+
+
+.container{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    max-width: 750px;
+    margin: auto;
+
+}
+
+.tuotekuvaus{
+    margin: auto;
+    text-align: left;
+    color: #bebebe;
+    font-size: 14px;
+    flex-grow: 1;
+}
+.tuotetiedot{
+    text-align: center;
+    font-weight: bold;
+    color: #F6F4F3;
+    text-shadow: 0 1px 0 #0000006e, 0 -1px 0 #0000006e, 1px 0 0 #0000006e, -1px 0 0 #0000006e;
+    text-decoration: dotted;
+}
+.tuotetiedot h2{
+    
+}
+.tuotetiedot h3{
+    text-decoration: underline;
+}
+
+
+.tuotekuva{
+    height: auto;
+    margin: 10px;
+    padding: 3px;
+    object-fit: cover;
+    align-self: center;
+}
+.tuotekuva img{
+    width: auto; 
+    height: 250px;
+
+}
+
+#sailio{
+    max-width: 1200px; 
+    margin: auto;
+}
+
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#uutis_otsikko
+{
+    max-width: 750px; 
+    margin: auto;
+    
+    text-align: center;
+    align-content: center;
+    background-color: #829191;
+    border:2px solid #101 ;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 0 #0000006e, 0 -1px 0 #0000006e, 1px 0 0 #0000006e, -1px 0 0 #0000006e;
+    text-decoration: dotted;
+    padding: 3px;
+}
+
+#tuotepohja{
+    max-width: 750px; 
+    margin: auto;
+    background-color: #4C5B61;
+    border:2px solid #101 ;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 5px;
+
+}
+
+@media screen and (min-width: 576px) {
+    .container{
+        flex-direction: row;
+    }
+    .tuotekuva{
+        max-width: 70%; 
+        height: auto;
+        margin: 10px;
+        padding: 3px;
+        flex-grow: 4;
+        object-fit: cover;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+nav {
     overflow: hidden;
     background-color: #333;
+
   }
   
   nav a {
     display: inline-block;
-    color: #f2f2f2;
+    color: #FFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -54,7 +274,7 @@ body{
   }
 
   nav a.active {
-    background-color: #04AA6D;
+    background-color: #F03A47;
     color: white;
   }
 
@@ -73,7 +293,7 @@ body{
   }
 
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 730px) {
     nav a.icon { display: none; }
 
     nav a:not(.icon) {
@@ -83,31 +303,25 @@ body{
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-      }
+    }
       
-      nav a:hover {
+    nav a:hover {
         background-color: #ddd;
         color: black;
-      }
+    }
       
+    .content{
+        width: 100%;
+        position: sticky;
+        top: 0;
+        
+    }
+    .oikea{
+        margin-left: auto;
+        margin-right: 0%;
+    }
 
 
   }
 
-
-
-
-
-
-footer {
-  position: sticky;
-  top: 100vh;
-  margin: auto;
-  background-color: #333;
-  color: white;
-  width: 100%;
-  padding: 4px;
-  text-align: center;
-}
-
-
+  
