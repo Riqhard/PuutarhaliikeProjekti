@@ -15,6 +15,7 @@ define("EMAIL_FROM_NAME","Ohjelmointikurssi");
 //HOST PASS USER MYSQL_...
 
 $DB = "neilikka";
+$port = "3306";
 $LOCAL = in_array($_SERVER['REMOTE_ADDR'],array('127.0.0.1','REMOTE_ADDR' => '::1'));
 if ($LOCAL) {	
     $tunnukset = "../../tunnukset.php";
@@ -35,6 +36,7 @@ elseif (strpos($_SERVER['HTTP_HOST'],"azurewebsites") !== false){
     $db_server = $_ENV['MYSQL_HOSTNAME'] ?? getenv('MYSQL_HOSTNAME');
     $db_username = $_ENV['MYSQL_USERNAME'] ?? getenv('MYSQL_USERNAME');
     $db_password = $_ENV['MYSQL_PASSWORD'] ?? getenv('MYSQL_PASSWORD');
+    $port = "6007";
 
     echo "<br>db_server:$db_server<br><br>";
     /* Mailtrap */
