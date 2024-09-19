@@ -31,6 +31,7 @@ if ($LOCAL) {
     }
 elseif (strpos($_SERVER['HTTP_HOST'],"azurewebsites") !== false){
     define("DEBUG",false);
+    echo "Azure";
     $db_server = $_ENV['MYSQL_HOSTNAME'] ?? getenv('MYSQL_HOSTNAME');
     $db_username = $_ENV['MYSQL_USERNAME'] ?? getenv('MYSQL_USERNAME');
     $db_password = $_ENV['MYSQL_PASSWORD'] ?? getenv('MYSQL_PASSWORD');
