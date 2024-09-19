@@ -15,7 +15,7 @@ define("EMAIL_FROM_NAME","Ohjelmointikurssi");
 //HOST PASS USER MYSQL_...
 
 $DB = "neilikka";
-$port = "3306";
+
 $LOCAL = in_array($_SERVER['REMOTE_ADDR'],array('127.0.0.1','REMOTE_ADDR' => '::1'));
 if ($LOCAL) {	
     $tunnukset = "../../tunnukset.php";
@@ -29,6 +29,7 @@ if ($LOCAL) {
     $db_username = $db_username_local; 
     $db_password = $db_password_local;
     $EMAIL_ADMIN = $admin_mail;
+    $port = "3306";
     }
 elseif (strpos($_SERVER['HTTP_HOST'],"azurewebsites") !== false){
     define("DEBUG",false);
