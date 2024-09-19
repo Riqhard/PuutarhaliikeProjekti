@@ -38,8 +38,6 @@ elseif (strpos($_SERVER['HTTP_HOST'],"azurewebsites") !== false){
     $db_username = $_ENV['MYSQL_USERNAME'] ?? getenv('MYSQL_USERNAME');
     $db_password = $_ENV['MYSQL_PASSWORD'] ?? getenv('MYSQL_PASSWORD');
     $port = $_ENV['MYSQL_PORT'] ?? getenv('MYSQL_PORT');
-
-    echo "<br>db_server:$db_server<br><br>";
     /* Mailtrap */
     $EMAIL_ADMIN = $_ENV['EMAIL_ADMIN'] ?? getenv('EMAIL_ADMIN'); 
     $username_mailtrap = $_ENV['EMAIL_USERNAME'] ?? getenv('EMAIL_USERNAME');
