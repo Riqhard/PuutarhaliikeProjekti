@@ -7,10 +7,6 @@ include 'header.php';
 
 <body>
   
-<?php
-include 'navigointi.html';
-?>
-
 
 
 

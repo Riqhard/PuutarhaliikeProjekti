@@ -22,8 +22,6 @@ ini_set('default_charset', 'utf-8');
     
 </head>
 <body>    
-<?php include 'navigointi.html'; ?>
-
 <?php 
 include_once "debuggeri.php";
 /* Huom. suojatulla sivulla on asetukset,db,rememberme.php; */
@@ -42,4 +40,7 @@ function active($sivu,$active){
   }
 
 /* Huom. nav-suojaus vie viimeiset linkit oikealle. */
+?>
+<?php
+include 'navigointi.html';
 ?>

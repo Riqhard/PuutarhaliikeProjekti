@@ -8,12 +8,6 @@ include 'header.php';
 
 
 
-    
-<?php
-include 'navigointi.html';
-?>
-
-
 <div id="sailio">
 
     <div class="otsikko">
