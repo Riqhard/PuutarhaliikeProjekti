@@ -54,8 +54,10 @@ if (empty($errors)) {
     $created = date('Y-m-d H:i:s');
     $password = password_hash($password, PASSWORD_DEFAULT);
     $query = "INSERT INTO users (name, email, created, password) VALUES ('$name', '$email', '$created', '$password')";
+    echo "<br> Quary:$query <br>";
     debuggeri($query);
     $result = $yhteys->query($query);
+    echo "<br> Result:$result <br>";
     $lisays = $yhteys->affected_rows;
     }
 
@@ -91,8 +93,8 @@ elseif ($lisays) {
     $display = "d-block";
     }
 else {
-    //$message = "Tallennus epäonnistui!";
-    //$success = "danger";
+    $message = "Tallennus epäonnistui!";
+    $success = "danger";
     }
 
 
