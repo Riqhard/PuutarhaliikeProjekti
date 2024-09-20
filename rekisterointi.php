@@ -55,10 +55,13 @@ if (empty($errors)) {
     $password = password_hash($password, PASSWORD_DEFAULT);
     $query = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
     debuggeri($query);
-    echo "<br> Quary:$query <br>";
-    $result = $yhteys->query($query);
-    echo "<br> Result:$result <br>";
-    $lisays = $yhteys->affected_rows;
+    if($yhteys->query($query) === TRUE){
+        echo "New record created successfully";
+        $result = $yhteys->query($query);
+        $lisays = $yhteys->affected_rows;
+    } else {
+        echo "Error: " . $query . "<br>" . $yhteys->error;
+    }
     }
 
 if ($lisays) {  
