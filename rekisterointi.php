@@ -53,7 +53,7 @@ debuggeri($errors);
 if (empty($errors)) {
     $created = date('Y-m-d H:i:s');
     $password = password_hash($password, PASSWORD_DEFAULT);
-    $query = "INSERT INTO users (name, email, created, password) VALUES ('$name', '$email', '$created', '$password')";
+    $query = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
     debuggeri($query);
     echo "<br> Quary:$query <br>";
     $result = $yhteys->query($query);

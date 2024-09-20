@@ -76,7 +76,6 @@ function debuggeri_shutdown($parametrit = ""){
     $path = $_SERVER['DOCUMENT_ROOT']."/debug_shutdown.txt";
     file_put_contents($path,$msg."\n", FILE_APPEND);
     echo "<p class='alert alert-danger'>Ohjelman suoritus päättyi virheeseen.</p>";
-    echo "<br><p class='alert alert-danger'>$msg</p>";
     }    
   }  
 
